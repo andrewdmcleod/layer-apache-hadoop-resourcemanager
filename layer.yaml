@@ -1,4 +1,11 @@
-includes: ['layer:hadoop-base', 'interface:dfs', 'interface:mapred', 'interface:mapred-slave', 'interface:benchmark']
+repo: git@github.com:juju-solutions/layer-apache-hadoop-resourcemanager.git
+includes:
+  - 'layer:hadoop-base'
+  - 'layer:hadoop-ganglia'
+  - 'interface:dfs'
+  - 'interface:mapred'
+  - 'interface:mapred-slave'
+  - 'interface:benchmark'
 options:
   hadoop-base:
     ports:
